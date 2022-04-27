@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 
 import Home from "@/components/home/Home.vue";
 import AdminPages from "@/components/admin/AdminPages.vue";
+import ArticlesByCategory from "@/components/article/ArticlesByCategory";
+import ArticleById from "@/components/article/ArticleById";
 
 Vue.use(VueRouter)
 
@@ -16,7 +18,19 @@ const routes = [{
         name: 'adminPages',
         path: '/admin',
         component: AdminPages
-}]
+},
+    {
+        name: 'articleByCategory',
+        path: '/categories/:id/articles',
+        component: ArticlesByCategory
+    },
+
+    {
+        name: 'articleById',
+        path: '/articles/:id',
+        component: ArticleById
+    }
+]
 
 export default new VueRouter ({
     mode: 'history',
