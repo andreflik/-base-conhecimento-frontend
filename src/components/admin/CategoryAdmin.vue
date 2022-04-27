@@ -18,7 +18,7 @@
           </b-row>
           <b-row v-else>
               <b-col xs="12">
-                  <b-form-group label="Categoria Pai" label-for="category-path">
+                  <b-form-group label="Categoria Pai" label-for="category-path ">
                       <b-form-input id="category-path" type="text" v-model="category.path" required readonly />
                   </b-form-group>
               </b-col>
