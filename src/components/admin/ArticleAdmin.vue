@@ -12,7 +12,7 @@
                 <b-form-input id="article-description" type="text"
                     v-model="article.description" required
                     :readonly="mode === 'remove'"
-                    placeholder="Descrição do Artigo..." />
+                    placeholder="Informe o Nome do Artigo..." />
             </b-form-group>
             <b-form-group v-if="mode === 'save'"
                 label="Imagem (URL):" label-for="article-imageUrl">
