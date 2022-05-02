@@ -6,7 +6,7 @@
       <h1 class="title">
           <router-link to="/">{{title}}</router-link>
       </h1>
-      <UserDropdown v-if="!UserDropdown"/>
+      <UserDropdown v-if="!hideUserDropdown"/>
   </header>
 </template>
 
